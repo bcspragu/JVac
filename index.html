@@ -10,6 +10,7 @@
     <title>JSON Upload</title>
   </head>
   <body>
-    <pre>{{range .}}{{ . }}<hr/>{{ end }}</pre>
+    <h1>{{len . }} entries</h1>
+    <pre>{{range .}}{{ raw . }}<hr/>{{ end }}</pre>
   </body>
 </html>
